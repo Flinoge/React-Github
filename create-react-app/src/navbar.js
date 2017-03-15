@@ -9,7 +9,7 @@ export default class Navbar extends Component {
         return (
             <div className="Navbar">
                 <ul>
-                    <li><Link to="/">Hello World</Link></li>
+                    <li><Link to="/">Contact</Link></li>
                     <li><Link to="Bye">Bye World</Link></li>
                     <li><Link to="GoodMorning">Good Morning World</Link></li>
                     <li><Link to="GoodNight">Good Night World</Link></li>

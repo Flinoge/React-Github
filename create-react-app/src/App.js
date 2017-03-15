@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Navbar from './navbar'
 import Title from './Title'
+import MyForm from './Form'
 
 export default class App extends Component {
   render() {
@@ -12,7 +12,8 @@ export default class App extends Component {
           <Title></Title>
           <br/>
           <Navbar></Navbar>
-		<div id="HelloWorld">Hello World</div>
+          <div id="HelloWorld">Contact</div>
+          <MyForm></MyForm>
       </div>
     );
   };
