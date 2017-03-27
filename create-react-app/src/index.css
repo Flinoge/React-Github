@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   font-family: sans-serif;
 }
 #HelloWorld{
@@ -13,27 +13,32 @@ body {
 }
 ul {
 	list-style-type: none;
-	position: absolute;
 	margin: 0;
 	padding: 0;
-	width: 200px;
-	height: 100%;
-	background-color: #f1f1f1;
-	border: solid 1px black;
-	left: 0;
-	top: 189px;
+	overflow: hidden;
+	background-color: #222;
 }
 
+li {
+	float: right;
+}
 
 li a {
 	display: block;
-	color: #000;
-	padding: 8px 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;
 }
 
-/* Change the link color on hover */
 li a:hover {
-	background-color: #555;
-	color: white;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+
+.titleDiv{
+	background-color: #222;
+	color:white;
+	padding: 1em;
 }

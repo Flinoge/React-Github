@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Row, Col } from 'react-bootstrap';
 
 
 
@@ -8,13 +8,16 @@ import './App.css';
 export default class Title extends Component {
     render() {
         return (
-            <div className="App-header">
-                <div class="bottomNav">
-                    To navigate to different worlds, select your world.
-                </div>
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h2>I am a cool spining logo, rawr.</h2><br/>
-            </div>
+            <Row className="titleDiv">
+                <Col xs={12} md={12}>
+
+                        <div className="title">Gear Helper</div>
+                        <div className="bottomNav">
+                            For All Your Gear Helping Needs
+                        </div>
+
+                </Col>
+            </Row>
         );
     }
 }

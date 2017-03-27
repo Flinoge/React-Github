@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
-import './App.css';
+import './nav.css'
+import { Row, Col } from 'react-bootstrap';
 
 
 import { Link } from "react-router";
 
+
 export default class Navbar extends Component {
     render() {
         return (
-            <div className="Navbar">
-                <ul>
-                    <li><Link to="/">Contact</Link></li>
-                    <li><Link to="Bye">Bye World</Link></li>
-                    <li><Link to="GoodMorning">Good Morning World</Link></li>
-                    <li><Link to="GoodNight">Good Night World</Link></li>
-                </ul>
-            </div>
+            <Row className="navDiv">
+                <Col xs={12} md={12} className="navMargin">
+                    <header className="header">
+                        <div className="constrain">
+                            <nav className="navigation">
+                                <span className="nav-toggle">
+                                    <span className="trigger">&#9776;</span>
+                                    <ul>
+                                        <li><Link to="Contact">Contact</Link></li>
+                                        <li><Link to="BiS">Your BiS</Link></li>
+                                        <li><Link to="/">InputStats</Link></li>
+                                    </ul>
+                                </span>
+                            </nav>
+                        </div>
+                    </header>
+                </Col>
+            </Row>
         );
     };
 }

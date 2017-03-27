@@ -1,22 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Router, Route, hashHistory, IndexRoute } from "react-router";
+import { Router, Route, hashHistory } from "react-router";
 
 import App from './App';
-import Bye from './Bye';
-import GoodMorning from './GoodMorning';
-import GoodNight from './GoodNight';
+import BiS from './BiS';
+import InputStats from './InputStats';
 
 
 const app = document.getElementById("root");
 
 ReactDOM.render(
   <Router history={hashHistory}>
-	  <Route path="/" component={App}></Route>
-	  <Route path="Bye" component={Bye}></Route>
-	  <Route path="GoodMorning" component={GoodMorning}></Route>
-	  <Route path="GoodNight" component={GoodNight}></Route>
+	  <Route path="/" component={InputStats}></Route>
+	  <Route path="BiS" component={BiS}></Route>
+	  <Route path="Contact" component={App}></Route>
   </Router>,
 	app
 );
