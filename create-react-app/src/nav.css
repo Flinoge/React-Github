@@ -76,3 +76,9 @@ a{
 li a:hover{
     background-color: gray;
 }
+
+@media (max-width: 450px){
+    .trigger{
+        font-size: 3em;
+    }
+}

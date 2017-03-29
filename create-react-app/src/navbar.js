@@ -17,9 +17,9 @@ export default class Navbar extends Component {
                                 <span className="nav-toggle">
                                     <span className="trigger">&#9776;</span>
                                     <ul>
-                                        <li><Link to="Contact">Contact</Link></li>
-                                        <li><Link to="BiS">Your BiS</Link></li>
                                         <li><Link to="/">InputStats</Link></li>
+                                        <li><Link to="BiS">Your BiS</Link></li>
+                                        <li><Link to="Contact">Contact</Link></li>
                                     </ul>
                                 </span>
                             </nav>
